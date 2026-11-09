@@ -1,0 +1,19 @@
+Documentation, evaluation records, and data in this repository
+
+Copyright (c) 2026 Nix
+
+Everything in this repository other than the files under skills/ is licensed
+under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You may share and adapt this material for any purpose, including commercially,
+provided you give appropriate credit, provide a link to the license, and
+indicate if changes were made.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Third-party material:
+- The Hume excerpts in validation/v3-case/ are from David Hume, A Treatise of
+  Human Nature (1739–40), public domain, as transcribed by Standard Ebooks
+  (CC0 1.0). They are not covered by the CC BY 4.0 grant above.
+- Model outputs quoted in this repository were generated during the
+  evaluations described here.

@@ -1,0 +1,15 @@
+{
+  "source.md": "879593e4a8b0f8cda340965527b92b175d14bc14d16de6e716d528b44a4de541",
+  "SKILL.md": "291ffd10d15c5a48ded25082e03f4398e40951fca58ad616d1d645f2a541cbc3",
+  "runner-input.md": "ad75787431023eb0048edfb0efc53ec87c0ea11fe82ddd07129547550a368dcb",
+  "v2-protocol-filled.md": "bff9170b920bb14ffad1e3e6d1d9fcc4fbff43fe266bbcaffd4fb80e63b8e6ad",
+  "README.md": "2a21a89149888a24be006fecdcbd49c8331ec3a25bd98ebad2e578735b6e658a",
+  "_note": "2026-11-09, after all runs: repository address redacted in README.md and v2-protocol-filled.md (and the as-received copy) before publication. No other change. runner-input.md, source.md and SKILL.md are unchanged. Pre-redaction hashes below.",
+  "_pre_redaction": {
+    "source.md": "879593e4a8b0f8cda340965527b92b175d14bc14d16de6e716d528b44a4de541",
+    "SKILL.md": "291ffd10d15c5a48ded25082e03f4398e40951fca58ad616d1d645f2a541cbc3",
+    "runner-input.md": "ad75787431023eb0048edfb0efc53ec87c0ea11fe82ddd07129547550a368dcb",
+    "v2-protocol-filled.md": "457b7ff6296aa61887de97483abe85083c6ba7887d7492be6b50e41e21809824",
+    "README.md": "940c00e091f645c9156841163dfc542256214ba5fcfee2a036d21b6af0d2c35f"
+  }
+}

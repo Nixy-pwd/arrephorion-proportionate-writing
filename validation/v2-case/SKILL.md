@@ -1,0 +1,89 @@
+---
+name: proportionate-writing
+description: Write or revise result-bearing prose (Discussion, Results, Abstract, Conclusion, findings summaries) from source material as three variants that differ in how much qualification they carry, check each against the source, and let the author choose. Use when the user wants a paragraph that states findings and their limits, or asks to cut hedging without losing necessary caveats.
+---
+
+# Proportionate Writing
+
+How much weight a reader should give a finding is partly a judgment about what a wrong reading would cost, and that judgment belongs to the author. Whether the text is faithful to the source is not a judgment call. This skill separates the two: it fixes what the source requires, writes variants that differ only in what is the author's to choose, checks every variant against the source, and hands the choice back.
+
+## Inputs
+
+- **Source material** (required for full use): results, data, notes, or the paper section the text must be faithful to.
+- **Task:** write a new paragraph, or revise a draft the user supplies.
+- **Optional:** caveats the author requires, a target length, the intended reader.
+
+If no source material is given and the task is a revision, treat the draft as the source and say once, in the output, that the check can only test consistency with the draft, not with the underlying results.
+
+## Step 1 — List the caveats before writing
+
+Read the source and list caveats in two tiers. Classify each by the claim it constrains, not by its topic.
+
+- **Floor:** you can name the sentence that, without this caveat, would be inaccurate, would go beyond the source's scope, or would contradict a formal status in the source. Examples: a verdict that is officially provisional; an inconclusive result read as evidence either way; a formal verdict and the rule that produced it.
+- **Weighed:** without it, every sentence stays accurate, but a reader would give the result more or less weight than they would with it. Examples: a statistic that clears its threshold narrowly; a small sample; a single run.
+
+If you can only argue that a reader might trust the result more than they should, the caveat is Weighed, not Floor.
+
+For each caveat, write one line: the caveat; its source location; for Floor, the sentence it protects; for Weighed, the reader judgment it changes. Compute what the source implies but does not state, such as how far a bound sits from its margin, and mark such values as derived, with the computation. You may compute and describe any derived value, but do not give it more evidential weight than the source's own rules allow: a value the source's decision rules exclude from a conclusion cannot support that conclusion in the caveat list or the text. Do not list generic limitations that apply to any study.
+
+List every Floor caveat. List at most five Weighed caveats; if more qualify, keep the ones that bear on the main conclusion.
+
+The author may move or strike items. A Floor caveat leaves the variants only if the author also narrows the claim it protects, or explains why the classification is wrong. Relabelling alone does not remove it.
+
+## Step 2 — Write the variants
+
+All variants must:
+
+- include every Floor caveat, once, where it applies;
+- keep formal verdicts at the strength the source gives them. Do not soften a FAIL into "limited success" or harden a trend into a finding;
+- take numbers, labels, and attributions from the source or from derivations shown in Step 1;
+- state each caveat once, placed so its role is clear. Add an explicit "this means…" only when the wording does not already make the consequence clear. Delete a caveat that changes nothing.
+
+They differ only in qualification:
+
+| Variant | Carries |
+|---|---|
+| **Direct** | Floor caveats only. |
+| **Balanced** | Floor and Weighed caveats. |
+| **Careful** | Balanced, plus content that is not already in Balanced, is supported by the source, and is an interpretive choice (for example, an alternative explanation the source raises). |
+
+If Careful would add nothing under that test, or any two variants would be nearly identical, merge them and say so in one line.
+
+## Step 3 — Check each variant against the source
+
+Do this after all variants are written. Re-read the source; do not check from memory of drafting.
+
+**Hard errors** (faithfulness, not taste):
+- a number, label, or attribution that differs from the source;
+- a cause or reason the source does not give;
+- a formal verdict made stronger or weaker than the source states. Check every sentence that restates a verdict, including summary, interpretive, and closing sentences, not only the sentence that names the formal label;
+- a missing Floor caveat;
+- content that contradicts the source, or an unsupported claim presented as an established result.
+
+Interpretation, implication, and recommendation are not errors when they are consistent with the source, have a basis the reader can see, and are stated at a strength the source supports. They belong to tradeoffs. Labelling a sentence as interpretation ("we suggest", "this may mean") does not make an unsupported or contradicting inference acceptable.
+
+Fix every hard error before presenting the variant. Record each fix as: original wording → corrected wording; source basis. If a fix needs information the source lacks, leave the variant out and say why.
+
+**Tradeoffs** (the author's call):
+- which Weighed caveats the variant carries;
+- which interpretations, implications, or recommendations it adds;
+- length;
+- what a reader is likely to conclude from it that they would not conclude from the others;
+- which reader it suits.
+
+## Step 4 — Hand the choice back
+
+Output, in this order and nothing more:
+
+1. The caveat list (Step 1), tiered.
+2. The variants, labelled.
+3. A table, one row per variant: words; Weighed caveats included; fixes (original → corrected; source basis), or "none"; one-line tradeoff.
+4. One question: which variant to use, or what to merge.
+
+Do not recommend a variant unless the user asks. If asked, give one sentence of reasoning tied to the intended reader.
+
+## Limits
+
+- The same model writes and checks the variants, so the check can share the writer's blind spots. For high-stakes text, have the author or a separate reviewer confirm the Floor list.
+- This skill does not verify the source itself. A wrong number in the source will be faithfully reproduced.
+- Three variants cost three times the reading. Use this for paragraphs that carry findings, not for every sentence.

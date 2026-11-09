@@ -1,0 +1,38 @@
+[
+  {
+    "label": "P1",
+    "condition": "control",
+    "configuration": "work",
+    "words": 278
+  },
+  {
+    "label": "P2",
+    "condition": "control",
+    "configuration": "chat",
+    "words": 313
+  },
+  {
+    "label": "P3",
+    "condition": "skill-Balanced",
+    "configuration": "chat",
+    "words": 210
+  },
+  {
+    "label": "P4",
+    "condition": "skill-Balanced",
+    "configuration": "work",
+    "words": 199
+  },
+  {
+    "label": "P5",
+    "condition": "control",
+    "configuration": "codex",
+    "words": 285
+  },
+  {
+    "label": "P6",
+    "condition": "skill-Balanced",
+    "configuration": "codex",
+    "words": 181
+  }
+]

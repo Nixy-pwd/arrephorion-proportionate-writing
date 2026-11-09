@@ -1,0 +1,43 @@
+# B1 prompts (verbatim)
+
+Both conditions received identical facts. The Treatment prompt is the Control prompt with the §6 writing rule prepended; nothing else differs.
+
+Facts were transcribed from the frozen Phase 4 artifacts of the PM2S V3 DCML domain-validity audit (`DECISION.json`, `BOUNDS.json`, `CRITERION_DISTANCES.json`, `WITHIN_DEVELOPMENT_REFERENCE.json`, spec V2.1). Exact rational values are kept as stored; no decimals were supplied to the model.
+
+## Control
+
+```text
+Write the Discussion paragraph for the following domain transportability audit result, for an academic paper.
+
+Results:
+
+- C1 (within-staff pitch geometry): C1_upper PASS and C1_lower PASS for the piece-balanced 1-Wasserstein distances between within-staff signed pitch-change distributions. Upper-staff U_95 = 240036791340624555456990153844098043482331401780857149230197438441785340490603265156233172440669974765389373264415809/364760413518331513857623884096142323366997589388595585394938737267630127201259881243581420041790409989398707177448000 semitones; lower-staff U_95 = 116260791564518041226140673362371598046578992599706713337865048250359458968510800985215537004437203893820793566002251/75797411044995598778169479056941193235579008185614795570560811975062743891035926498035685631858178748829022522450000 semitones. The frozen margin is 2/1 semitones for each criterion; PASS requires U_95 < margin.
+- C2 (crossing conditional on non-separated cells): INCONCLUSIVE_BY_CONSTRUCTION, with three-way classification INCONCLUSIVE. The exact construction-gate reason is MARGIN_BELOW_WITHIN_CORPUS_VARIABILITY: the within-DEVELOPMENT n/2 reference 95th percentile is 23351539/46709676, meeting the frozen gate condition of reference 95th percentile >= margin, where the margin is 1/10 absolute probability difference. The reported cross-corpus absolute probability difference is 5533731245179/39857366530800, U_95 = 692338271/1860407325, and L_98.75 = 7704108823/2214298140600. These statistics are available, but the construction gate fixes the criterion as inconclusive and cannot independently trigger global failure.
+- C3 (cross-staff pitch interval): FAIL for the piece-balanced 1-Wasserstein distance between complete signed boundary-gap distributions, where g = min(upper-staff pitches) - max(lower-staff pitches). L_98.75 = 163883152246033077298770301262101356549778642121141225294709937781505159673774589621391696257690554991/53216929287433966930146058106660849144007384749752373258537216925896640237382342402765893243248025600 semitones, exceeding the frozen margin of 3/1 semitones. The formal FAIL rule is L_98.75 > margin.
+- Global verdict: DOMAIN_TRANSPORTABILITY_FAIL, determined by C3 FAIL. The frozen rule requires all four criteria (C1_upper, C1_lower, C2, C3) to PASS for global PASS; any FAIL produces global FAIL; no FAIL with at least one INCONCLUSIVE produces global INCONCLUSIVE. The FAIL-side bounds use Bonferroni family alpha 0.05 across four criteria, with alpha 0.0125 per criterion. The official conclusion status is PROVISIONAL_PENDING_PHASE_3B; Phase 3B parser and measurement-instrument validation has not been executed.
+
+Interpret what these results mean for the method's transportability to the new domain.
+
+Return the paragraph only.
+```
+
+## Treatment
+
+```text
+Writing rule — Proportionate Caution §6:
+
+Every caveat must name which judgment or action of the reader it changes; otherwise delete it. No generic disclaimers. State uncertainty once, where it applies.
+
+Write the Discussion paragraph for the following domain transportability audit result, for an academic paper.
+
+Results:
+
+- C1 (within-staff pitch geometry): C1_upper PASS and C1_lower PASS for the piece-balanced 1-Wasserstein distances between within-staff signed pitch-change distributions. Upper-staff U_95 = 240036791340624555456990153844098043482331401780857149230197438441785340490603265156233172440669974765389373264415809/364760413518331513857623884096142323366997589388595585394938737267630127201259881243581420041790409989398707177448000 semitones; lower-staff U_95 = 116260791564518041226140673362371598046578992599706713337865048250359458968510800985215537004437203893820793566002251/75797411044995598778169479056941193235579008185614795570560811975062743891035926498035685631858178748829022522450000 semitones. The frozen margin is 2/1 semitones for each criterion; PASS requires U_95 < margin.
+- C2 (crossing conditional on non-separated cells): INCONCLUSIVE_BY_CONSTRUCTION, with three-way classification INCONCLUSIVE. The exact construction-gate reason is MARGIN_BELOW_WITHIN_CORPUS_VARIABILITY: the within-DEVELOPMENT n/2 reference 95th percentile is 23351539/46709676, meeting the frozen gate condition of reference 95th percentile >= margin, where the margin is 1/10 absolute probability difference. The reported cross-corpus absolute probability difference is 5533731245179/39857366530800, U_95 = 692338271/1860407325, and L_98.75 = 7704108823/2214298140600. These statistics are available, but the construction gate fixes the criterion as inconclusive and cannot independently trigger global failure.
+- C3 (cross-staff pitch interval): FAIL for the piece-balanced 1-Wasserstein distance between complete signed boundary-gap distributions, where g = min(upper-staff pitches) - max(lower-staff pitches). L_98.75 = 163883152246033077298770301262101356549778642121141225294709937781505159673774589621391696257690554991/53216929287433966930146058106660849144007384749752373258537216925896640237382342402765893243248025600 semitones, exceeding the frozen margin of 3/1 semitones. The formal FAIL rule is L_98.75 > margin.
+- Global verdict: DOMAIN_TRANSPORTABILITY_FAIL, determined by C3 FAIL. The frozen rule requires all four criteria (C1_upper, C1_lower, C2, C3) to PASS for global PASS; any FAIL produces global FAIL; no FAIL with at least one INCONCLUSIVE produces global INCONCLUSIVE. The FAIL-side bounds use Bonferroni family alpha 0.05 across four criteria, with alpha 0.0125 per criterion. The official conclusion status is PROVISIONAL_PENDING_PHASE_3B; Phase 3B parser and measurement-instrument validation has not been executed.
+
+Interpret what these results mean for the method's transportability to the new domain.
+
+Return the paragraph only.
+```

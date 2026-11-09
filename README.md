@@ -6,7 +6,7 @@ A writing skill against defensive writing in result-bearing prose: fewer caveats
 
 It lists the caveats your source material supports, separates the ones faithfulness requires from the ones that are your call, writes three variants that differ only in the latter, checks each against the source, and asks you to choose.
 
-**Status:** draft v0.3. In a blind-scored comparison, the skill's output had fewer repeated caveats and was a third shorter than the same models without it, with no necessary caveat lost (one material, one run per configuration: suggestive, not established). Works reliably in Codex and ChatGPT work mode; not recommended in ChatGPT chat. Details under [Evidence](#evidence).
+**Status:** v0.3. In a blind-scored comparison, the skill's output had fewer repeated caveats and was a third shorter than the same models without it, with no necessary caveat lost (one material, one run per configuration: suggestive, not established). Works reliably in Codex and ChatGPT work mode; not recommended in ChatGPT chat. Details under [Evidence](#evidence).
 
 ## What it is for
 
